@@ -15,42 +15,20 @@
                     Padding="30"
                     Spacing="25">
 
-                    <Label
-                        FontSize="32"
+                    <Button
+                        Clicked="OnCounterClicked"
                         HorizontalOptions="Center"
-                        SemanticProperties.HeadingLevel="Level1"
-                        Style="{StaticResource MauiLabel}"
-                        Text="Hello, World!" />
-
-                    <Label
-                        FontSize="18"
-                        HorizontalOptions="Center"
-                        SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                        SemanticProperties.HeadingLevel="Level1"
-                        Style="{StaticResource MauiLabel}"
-                        Text="Welcome to .NET Multi-platform App UI" />
-
+                        SemanticProperties.Hint="Counts the number of times you click"
+                        Style="{StaticResource PrimaryAction}"
+                        Text="Get Fact" />
+                    
                     <Label
                         x:Name="CounterLabel"
                         FontAttributes="Bold"
                         FontSize="18"
                         HorizontalOptions="Center"
                         Style="{StaticResource MauiLabel}"
-                        Text="Current count: 0" />
-
-                    <Button
-                        Clicked="OnCounterClicked"
-                        HorizontalOptions="Center"
-                        SemanticProperties.Hint="Counts the number of times you click"
-                        Style="{StaticResource PrimaryAction}"
-                        Text="Click me" />
-
-                    <Image
-                        HeightRequest="310"
-                        HorizontalOptions="Center"
-                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                        Source="dotnet_bot.png"
-                        WidthRequest="250" />
+                        Text="" />
 
                 </StackLayout>
                 <Grid
